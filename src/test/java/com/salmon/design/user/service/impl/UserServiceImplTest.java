@@ -68,9 +68,6 @@ class UserServiceImplTest {
         System.out.println(response.getMsg());
 
 
-
-
-
     }
 
     @Test
@@ -81,7 +78,7 @@ class UserServiceImplTest {
 
     @Test
     void delete() {
-        ServerResponse<String> response = this.userService.delete(1);
+        ServerResponse<User> response = this.userService.delete(1);
         System.out.println(response.getMsg());
     }
 }

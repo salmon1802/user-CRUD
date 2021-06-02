@@ -55,20 +55,5 @@ public class BeanFactory {
         return beans.get(beanName);
     }
 
-    /**
-     * 根据Bean的名称获取bean对象
-     * @param beanName
-     * @return
 
-    public static Object getBean(String beanName){
-    Object bean = null;
-    try {
-    String beanPath = props.getProperty(beanName);
-    //            System.out.println(beanPath);
-    bean = Class.forName(beanPath).newInstance();//每次都会调用默认构造函数创建对象
-    }catch (Exception e){
-    e.printStackTrace();
-    }
-    return bean;
-    }*/
 }

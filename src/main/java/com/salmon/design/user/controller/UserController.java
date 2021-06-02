@@ -69,7 +69,7 @@ public class UserController {
      */
     @RequestMapping(value = "delete.do",method = RequestMethod.POST)
     @ResponseBody
-    public ServerResponse<String> delete(int userId){
+    public ServerResponse<User> delete(int userId){
 
         return iUserService.delete(userId);
     }
@@ -104,7 +104,7 @@ public class UserController {
      * @param session
      * @return
      */
-    @RequestMapping(value = "get_information.do",method = RequestMethod.POST)
+    @RequestMapping(value = "get_information.do")
     @ResponseBody
     public ServerResponse<User> get_information(HttpSession session){
         User currentUser = (User)session.getAttribute(Const.CURRENT_USER);

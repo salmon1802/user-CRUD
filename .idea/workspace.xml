@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775f869f-d4cd-4ee2-a131-463d0732e489" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/salmon/design/user/controller/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salmon/design/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salmon/design/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salmon/design/user/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salmon/design/user/factory/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salmon/design/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salmon/design/user/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salmon/design/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salmon/design/user/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/salmon/design/user/service/impl/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/salmon/design/user/service/impl/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salmon/design/user/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salmon/design/user/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/salmon/design/user/service/impl/UserServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/salmon/design/user/service/impl/UserServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,14 +81,30 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.salmon.design.user.service.impl" />
       <recent name="com.salmon.design.user.controller" />
+      <recent name="com.salmon.design.user.service.impl" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest.register">
+  <component name="RunManager" selected="JUnit.UserControllerTest.get_information">
+    <configuration name="UserControllerTest.get_information" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salmon.design.user.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salmon.design.user.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.salmon.design.user.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="get_information" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceImplTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="user" />
       <extension name="coverage">
@@ -93,22 +116,6 @@
       <option name="PACKAGE_NAME" value="com.salmon.design.user.service.impl" />
       <option name="MAIN_CLASS_NAME" value="com.salmon.design.user.service.impl.UserServiceImplTest" />
       <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceImplTest.getInformation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salmon.design.user.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salmon.design.user.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.salmon.design.user.service.impl.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="getInformation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,9 +178,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest.get_information" />
         <item itemvalue="JUnit.UserServiceImplTest.register" />
         <item itemvalue="JUnit.UserServiceImplTest.delete" />
-        <item itemvalue="JUnit.UserServiceImplTest.getInformation" />
         <item itemvalue="JUnit.UserServiceImplTest.updateInformation" />
         <item itemvalue="JUnit.UserServiceImplTest.login" />
       </list>
@@ -260,6 +267,10 @@
       <workItem from="1622553731555" duration="11000" />
       <workItem from="1622615710296" duration="6374000" />
       <workItem from="1622625395644" duration="256000" />
+      <workItem from="1622626619585" duration="62000" />
+      <workItem from="1622626693846" duration="1546000" />
+      <workItem from="1622630273050" duration="14000" />
+      <workItem from="1622630301844" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="基于springboot的user表的crud基本操作&#10;(软件设计课程设计)">
       <created>1620957952487</created>
@@ -310,22 +321,22 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="555" y="162" key="FileChooserDialogImpl/0.0.1549.840@0.0.1549.840" timestamp="1620957521332" />
-    <state width="1506" height="314" key="GridCell.Tab.0.bottom" timestamp="1622623397297">
+    <state width="1506" height="314" key="GridCell.Tab.0.bottom" timestamp="1622631027785">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="314" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1622623397297" />
-    <state width="1506" height="314" key="GridCell.Tab.0.center" timestamp="1622623397297">
+    <state width="1506" height="314" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1622631027785" />
+    <state width="1506" height="314" key="GridCell.Tab.0.center" timestamp="1622631027785">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="314" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1622623397297" />
-    <state width="1506" height="314" key="GridCell.Tab.0.left" timestamp="1622623397297">
+    <state width="1506" height="314" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1622631027785" />
+    <state width="1506" height="314" key="GridCell.Tab.0.left" timestamp="1622631027785">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="314" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1622623397297" />
-    <state width="1506" height="314" key="GridCell.Tab.0.right" timestamp="1622623397297">
+    <state width="1506" height="314" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1622631027785" />
+    <state width="1506" height="314" key="GridCell.Tab.0.right" timestamp="1622631027785">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="314" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1622623397297" />
+    <state width="1506" height="314" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1622631027785" />
     <state width="1506" height="182" key="GridCell.Tab.1.bottom" timestamp="1622623044931">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
@@ -370,10 +381,10 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="367" y="154" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1622468380762" />
-    <state x="537" y="139" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1622620195660">
+    <state x="537" y="139" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1622627434840">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="537" y="139" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1549.840@0.0.1549.840" timestamp="1622620195660" />
+    <state x="537" y="139" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1549.840@0.0.1549.840" timestamp="1622627434840" />
     <state x="432" y="191" key="run.anything.popup" timestamp="1620887843636">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
@@ -425,6 +436,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/salmon/design/user/service/impl/UserServiceImpl.java</url>
           <line>135</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/salmon/design/user/service/impl/UserServiceImplTest.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/salmon/design/user/service/impl/UserServiceImpl.java</url>
