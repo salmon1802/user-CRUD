@@ -66,6 +66,8 @@ class UserServiceImplTest {
 
         ServerResponse<User> response = this.userService.updateInformation(user);
         System.out.println(response.getMsg());
+
+
     }
 
     @Test
