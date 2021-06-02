@@ -3,7 +3,6 @@ package com.salmon.design.user.service.impl;
 import com.salmon.design.user.common.Const;
 import com.salmon.design.user.common.ServerResponse;
 import com.salmon.design.user.dao.UserMapper;
-import com.salmon.design.user.factory.BeanFactory;
 import com.salmon.design.user.pojo.User;
 import com.salmon.design.user.service.IUserService;
 import com.salmon.design.user.util.MD5Util;
@@ -161,7 +160,7 @@ public class UserServiceImpl implements IUserService {
      * @param userId
      * @return
      */
-    public ServerResponse<User> delete(Integer userId){
+    public ServerResponse<String> delete(Integer userId){
         User user = userMapper.selectByPrimaryKey(userId);
         if(user == null){
             return ServerResponse.createByErrorMessage("找不到当前用户");

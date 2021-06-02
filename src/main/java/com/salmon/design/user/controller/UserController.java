@@ -69,7 +69,7 @@ public class UserController {
      */
     @RequestMapping(value = "delete.do",method = RequestMethod.POST)
     @ResponseBody
-    public ServerResponse<User> delete(int userId){
+    public ServerResponse<String> delete(int userId){
 
         return iUserService.delete(userId);
     }

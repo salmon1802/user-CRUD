@@ -21,7 +21,7 @@ public interface IUserService {
 
     ServerResponse<User> getInformation(Integer userId);
 
-    ServerResponse<User> delete(Integer userId);
+    ServerResponse<String> delete(Integer userId);
 
     ServerResponse<User> login(String username, String password);
 

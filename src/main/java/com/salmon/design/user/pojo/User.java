@@ -1,6 +1,24 @@
 package com.salmon.design.user.pojo;
 
 public class User {
+    @Override
+    public String toString() {
+        return "User{" +
+                "uid=" + uid +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", roleid='" + roleid + '\'' +
+                ", lastLogin='" + lastLogin + '\'' +
+                ", ip='" + ip + '\'' +
+                ", status='" + status + '\'' +
+                ", bz='" + bz + '\'' +
+                ", email='" + email + '\'' +
+                ", number=" + number +
+                ", phone='" + phone + '\'' +
+                '}';
+    }
+
     private Integer uid;
 
     private String username;
